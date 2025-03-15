@@ -37,7 +37,7 @@ function App() {
   };
     
   return (
-    <div className="max-w-[1440px] h-screen mx-auto flex flex-col xl:flex-row items-center px-4 py-10 gap-6 md:gap-10 text-center  xl:text-start">
+    <div className="max-w-[1440px] h-screen mx-auto flex flex-col xl:flex-row items-center pr-4 py-10 gap-6 md:gap-10 text-center  xl:text-start">
     <div><Toaster/></div>
 
       <div className="mb-6 flex flex-col xl:w-1/2 md:w-4/6 ">
@@ -70,7 +70,7 @@ function App() {
       </div>
 
       {/* Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center gap-6 md:gap-4 w-full md:w-4/5 xl:w-1/2 text-start ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-6  w-full md:w-[90vw]  xl:w-1/2 text-start ">
         {cards.map((card, index) => (
           <div key={index} className="bg-[#112949] text-white p-4 rounded-lg shadow-lg w-[234px] h-[208px] xl:w-[218px] xl:h-[192px]">
             <div className="flex items-center space-x-2">
@@ -88,7 +88,7 @@ function App() {
 
 
       {/* Mobile Mail */}
-      <div className=" flex flex-col sm:hidden items-center w-[300px]">
+      <div className=" flex flex-col sm:hidden items-center w-[300px] pb-20">
         <input
           type="email"
           value={email}
